@@ -16,7 +16,7 @@ export default function NotFound() {
 
           <p className="mt-6 text-base leading-7 text-[#4B5563]">
             The page you are looking for does not exist, may have moved, or is
-            hiding somewhere in the great administrative filing cabinet of the internet.
+            hiding somewhere in the great filing cabinet of the internet.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">

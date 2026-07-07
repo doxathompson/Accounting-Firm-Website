@@ -16,9 +16,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://accounting-firm-website-one.vercel.app"),
-  title: "London Accounting Firm | Small Business Accountants in London",
+  title: {
+    default: "London Accounting Firm | Small Business Accountants in London",
+    template: "%s | London Accounting Firm",
+  },
   description:
     "Reliable accounting support for sole traders and small limited companies in London.",
+  openGraph: {
+    title: "London Accounting Firm | Small Business Accountants in London",
+    description:
+      "Reliable accounting support for sole traders and small limited companies in London.",
+    url: "https://accounting-firm-website-one.vercel.app",
+    siteName: "London Accounting Firm",
+    images: [
+      {
+        url: "/hero-accounting-meeting.jpg",
+        width: 1200,
+        height: 900,
+        alt: "Accountants reviewing paperwork with a small business client",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
