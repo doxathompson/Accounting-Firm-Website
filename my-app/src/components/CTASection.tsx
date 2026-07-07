@@ -11,18 +11,24 @@ export function CTASection({
   description = "Tell us a little about your business and we’ll get back to you to arrange a free consultation.",
 }: CTASectionProps) {
   return (
-    <section className="bg-blue-50 py-20">
-      <Container>
-        <div className="rounded-[2rem] bg-slate-950 p-8 text-white sm:p-10 lg:p-12">
-          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+    <section className="bg-[#F6F4EE] py-24">
+      <Container size="wide">
+        <div className="bg-[#101923] px-8 py-16 text-white sm:px-12 lg:px-20">
+          <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
+              <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-slate-400">
+                Free consultation
+              </p>
+
+              <h2 className="max-w-4xl text-4xl font-normal leading-[1.05] tracking-[-0.05em] sm:text-5xl">
                 {title}
               </h2>
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
+
+              <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
                 {description}
               </p>
             </div>
+
             <ButtonLink href="/contact" variant="secondary">
               Book a free consultation
             </ButtonLink>

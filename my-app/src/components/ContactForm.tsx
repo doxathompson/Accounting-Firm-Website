@@ -1,9 +1,14 @@
 export function ContactForm() {
+  const inputClass =
+    "mt-2 w-full border border-[#D8D3C8] bg-[#FAF9F4] px-4 py-4 text-sm text-[#111827] shadow-sm transition placeholder:text-[#8A8175] focus:border-[#101923] focus:bg-white focus:outline-none";
+
+  const labelClass = "text-sm font-semibold text-[#111827]";
+
   return (
-    <form className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+    <form className="border border-[#E5E1D8] bg-[#FAF9F4] p-6 shadow-sm sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="text-sm font-semibold text-slate-800">
+          <label htmlFor="name" className={labelClass}>
             Name
           </label>
           <input
@@ -11,12 +16,13 @@ export function ContactForm() {
             name="name"
             type="text"
             required
-            className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm"
+            className={inputClass}
+            placeholder="Your name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="text-sm font-semibold text-slate-800">
+          <label htmlFor="email" className={labelClass}>
             Email
           </label>
           <input
@@ -24,31 +30,37 @@ export function ContactForm() {
             name="email"
             type="email"
             required
-            className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm"
+            className={inputClass}
+            placeholder="you@example.com"
           />
         </div>
 
         <div>
-          <label htmlFor="phone" className="text-sm font-semibold text-slate-800">
+          <label htmlFor="phone" className={labelClass}>
             Phone
           </label>
           <input
             id="phone"
             name="phone"
             type="tel"
-            className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm"
+            className={inputClass}
+            placeholder="+44..."
           />
         </div>
 
         <div>
-          <label htmlFor="businessType" className="text-sm font-semibold text-slate-800">
+          <label htmlFor="businessType" className={labelClass}>
             Business type
           </label>
           <select
             id="businessType"
             name="businessType"
-            className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm"
+            className={inputClass}
+            defaultValue=""
           >
+            <option value="" disabled>
+              Select one
+            </option>
             <option>Sole trader</option>
             <option>Limited company</option>
             <option>Freelancer / consultant</option>
@@ -57,14 +69,18 @@ export function ContactForm() {
         </div>
 
         <div className="sm:col-span-2">
-          <label htmlFor="preferredContact" className="text-sm font-semibold text-slate-800">
+          <label htmlFor="preferredContact" className={labelClass}>
             Preferred contact method
           </label>
           <select
             id="preferredContact"
             name="preferredContact"
-            className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm"
+            className={inputClass}
+            defaultValue=""
           >
+            <option value="" disabled>
+              Select one
+            </option>
             <option>Email</option>
             <option>Phone</option>
             <option>Either is fine</option>
@@ -72,7 +88,7 @@ export function ContactForm() {
         </div>
 
         <div className="sm:col-span-2">
-          <label htmlFor="message" className="text-sm font-semibold text-slate-800">
+          <label htmlFor="message" className={labelClass}>
             Message
           </label>
           <textarea
@@ -81,20 +97,21 @@ export function ContactForm() {
             rows={6}
             required
             placeholder="Tell us a little about your business and what you need help with."
-            className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm"
+            className={inputClass}
           />
         </div>
       </div>
 
       <button
         type="submit"
-        className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 sm:w-auto"
+        className="mt-6 inline-flex w-full items-center justify-center bg-[#101923] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#1C2936] sm:w-auto"
       >
         Book a free consultation
       </button>
 
-      <p className="mt-4 text-sm leading-6 text-slate-500">
-        This form is ready for static UI review. Email or backend handling can be connected later.
+      <p className="mt-5 max-w-md text-sm leading-6 text-[#4B5563]">
+        Tell us a little about your business and we’ll get back to you to arrange
+        a consultation.
       </p>
     </form>
   );

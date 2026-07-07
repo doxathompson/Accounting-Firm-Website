@@ -8,33 +8,50 @@ type ServiceCardProps = {
 
 export function ServiceCard({ service, detailed = false }: ServiceCardProps) {
   return (
-    <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-      <h3 className="text-xl font-bold text-slate-950">{service.title}</h3>
-      <p className="mt-3 leading-7 text-slate-600">{service.short}</p>
+    <article className="group border border-[#E5E1D8] bg-[#FAF9F4] p-7 transition hover:bg-white">
+      <div className="flex h-10 w-10 items-center justify-center bg-[#101923] text-sm font-semibold text-white">
+        +
+      </div>
+
+      <h3 className="mt-7 text-2xl font-normal leading-tight tracking-[-0.04em] text-[#111827]">
+        {service.title}
+      </h3>
+
+      <p className="mt-4 text-sm leading-6 text-[#4B5563]">{service.short}</p>
 
       {detailed ? (
-        <div className="mt-6 space-y-5">
+        <div className="mt-8 space-y-6 border-t border-[#E5E1D8] pt-6">
           <div>
-            <p className="text-sm font-bold text-slate-950">Who it is for</p>
-            <p className="mt-2 text-sm leading-6 text-slate-600">{service.who}</p>
+            <p className="text-sm font-semibold text-[#111827]">
+              Who it is for
+            </p>
+            <p className="mt-2 text-sm leading-6 text-[#4B5563]">
+              {service.who}
+            </p>
           </div>
+
           <div>
-            <p className="text-sm font-bold text-slate-950">How we help</p>
-            <p className="mt-2 text-sm leading-6 text-slate-600">{service.how}</p>
+            <p className="text-sm font-semibold text-[#111827]">
+              How we help
+            </p>
+            <p className="mt-2 text-sm leading-6 text-[#4B5563]">
+              {service.how}
+            </p>
           </div>
+
           <Link
             href="/contact"
-            className="inline-flex text-sm font-bold text-blue-700 hover:text-blue-900"
+            className="inline-flex text-sm font-semibold text-[#111827] underline underline-offset-4 transition hover:opacity-70"
           >
-            Book a free consultation →
+            Book a free consultation
           </Link>
         </div>
       ) : (
         <Link
           href="/services"
-          className="mt-5 inline-flex text-sm font-bold text-blue-700 hover:text-blue-900"
+          className="mt-7 inline-flex text-sm font-semibold text-[#111827] underline underline-offset-4 transition hover:opacity-70"
         >
-          Learn more →
+          Learn more
         </Link>
       )}
     </article>
