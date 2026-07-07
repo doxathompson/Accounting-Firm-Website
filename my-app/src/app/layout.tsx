@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "QPA Accountants | Small Business Accountants in London",
+  title: "London Accounting Firm | Small Business Accountants in London",
   description:
     "Reliable accounting support for sole traders and small limited companies in London.",
 };

@@ -1,8 +1,8 @@
 export const firm = {
-  name: "QPA Accountants",
+  name: "London Accounting Firm",
   location: "London, United Kingdom",
   phone: "+44 20 0000 0000",
-  email: "hello@qpaaccountants.co.uk",
+  email: "hello@londonaccountingfirm.co.uk",
 };
 
 export const navItems = [
@@ -165,7 +165,7 @@ export const values = [
 
 export const faqs = [
   {
-    question: "Who does QPA Accountants work with?",
+    question: "Who does London Accounting Firm work with?",
     answer:
       "We work with sole traders, freelancers, consultants, small limited companies, and owner-managed businesses, especially those with turnover under £500k.",
   },

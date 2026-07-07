@@ -4,9 +4,9 @@ import { PageHeader } from "@/components/PageHeader";
 import { firm } from "@/data/site";
 
 export const metadata = {
-  title: "Contact | QPA Accountants",
+  title: "Contact | London Accounting Firm",
   description:
-    "Book a free consultation with QPA Accountants, a small London accounting firm for sole traders and limited companies.",
+    "Book a free consultation with London Accounting Firm, a small London accounting firm for sole traders and limited companies.",
 };
 
 export default function ContactPage() {

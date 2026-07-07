@@ -5,7 +5,7 @@ import { ResourceCard } from "@/components/ResourceCard";
 import { resources } from "@/data/site";
 
 export const metadata = {
-  title: "Resources | QPA Accountants",
+  title: "Resources | London Accounting Firm",
   description:
     "Simple accounting resources for sole traders and limited companies.",
 };

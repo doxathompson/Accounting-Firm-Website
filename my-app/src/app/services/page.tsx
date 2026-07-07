@@ -6,7 +6,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { services } from "@/data/site";
 
 export const metadata = {
-  title: "Services | QPA Accountants",
+  title: "Services | London Accounting Firm",
   description:
     "Accounting services for sole traders, freelancers, consultants, and small limited companies in London.",
 };

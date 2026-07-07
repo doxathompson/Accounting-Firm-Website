@@ -6,9 +6,9 @@ import { TeamCard } from "@/components/TeamCard";
 import { teamMembers, values } from "@/data/site";
 
 export const metadata = {
-  title: "About | QPA Accountants",
+  title: "About | London Accounting Firm",
   description:
-    "Learn about QPA Accountants, a small London accounting firm supporting sole traders and limited companies.",
+    "Learn about London Accounting Firm, a small London accounting firm supporting sole traders and limited companies.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="A small London accounting team built around personal service."
-        description="QPA Accountants supports sole traders, freelancers, consultants, and small limited companies who want reliable advice and responsive communication from real people."
+        description="London Accounting Firm supports sole traders, freelancers, consultants, and small limited companies who want reliable advice and responsive communication from real people."
       />
 
       <section className="bg-white py-20">

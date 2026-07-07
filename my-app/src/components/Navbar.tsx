@@ -15,7 +15,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
       <Container>
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3" aria-label="QPA Accountants home">
+          <Link href="/" className="flex items-center gap-3" aria-label="London Accounting Firm home">
             <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white">
               QPA
             </span>
