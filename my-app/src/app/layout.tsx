@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://accounting-firm-website-one.vercel.app"),
   title: "London Accounting Firm | Small Business Accountants in London",
   description:
     "Reliable accounting support for sole traders and small limited companies in London.",
