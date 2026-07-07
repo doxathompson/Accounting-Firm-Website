@@ -19,15 +19,15 @@ export default function ContactPage() {
         description="Tell us a little about your business and we’ll get back to you to arrange a consultation."
       />
 
-      <section className="bg-[#F6F4EE] py-24">
+      <section className="overflow-hidden bg-[#F6F4EE] py-20 lg:py-24">
         <Container>
-          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
             <div>
               <p className="mb-4 text-sm font-medium text-[#4B5563]">
                 Get in touch
               </p>
 
-              <h2 className="max-w-md text-5xl font-normal leading-[1.02] tracking-[-0.05em] text-[#111827]">
+              <h2 className="max-w-md text-4xl font-normal leading-[1.03] tracking-[-0.05em] text-[#111827] sm:text-5xl">
                 Speak with a small team that understands small businesses.
               </h2>
 
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 mysterious ritual performed in a locked spreadsheet.
               </p>
 
-              <div className="relative mt-8 h-72 overflow-hidden bg-[#DED8CC] shadow-sm">
+              <div className="relative mt-8 h-72 overflow-hidden bg-[#DED8CC] shadow-sm sm:h-80">
                 <Image
                   src="/contact-accounting-consultation.jpg"
                   alt="Accounting consultation meeting"
@@ -47,22 +47,26 @@ export default function ContactPage() {
                 />
               </div>
 
-              <div className="mt-8 space-y-5 border border-[#E5E1D8] bg-[#FAF9F4] p-6">
+              <div className="mt-8 grid gap-5 border border-[#E5E1D8] bg-[#FAF9F4] p-6 sm:grid-cols-3 lg:grid-cols-1">
                 <div>
                   <p className="text-sm font-semibold text-[#111827]">Phone</p>
-                  <p className="mt-1 text-sm text-[#4B5563]">{firm.phone}</p>
+                  <p className="mt-1 break-words text-sm text-[#4B5563]">
+                    {firm.phone}
+                  </p>
                 </div>
 
                 <div>
                   <p className="text-sm font-semibold text-[#111827]">Email</p>
-                  <p className="mt-1 text-sm text-[#4B5563]">{firm.email}</p>
+                  <p className="mt-1 break-words text-sm text-[#4B5563]">
+                    {firm.email}
+                  </p>
                 </div>
 
                 <div>
                   <p className="text-sm font-semibold text-[#111827]">
                     Location
                   </p>
-                  <p className="mt-1 text-sm text-[#4B5563]">
+                  <p className="mt-1 break-words text-sm text-[#4B5563]">
                     {firm.location}
                   </p>
                 </div>

@@ -21,15 +21,15 @@ export default function AboutPage() {
         description="London Accounting Firm supports sole traders, freelancers, consultants, and small limited companies who want reliable advice and responsive communication from real people."
       />
 
-      <section className="bg-[#F6F4EE] py-24">
+      <section className="overflow-hidden bg-[#F6F4EE] py-20 lg:py-24">
         <Container>
-          <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
             <div>
               <p className="mb-4 text-sm font-medium text-[#4B5563]">
                 Our story
               </p>
 
-              <h2 className="max-w-md text-5xl font-normal leading-[1.02] tracking-[-0.05em] text-[#111827]">
+              <h2 className="max-w-md text-4xl font-normal leading-[1.03] tracking-[-0.05em] text-[#111827] sm:text-5xl">
                 Small by design, personal by nature.
               </h2>
 
@@ -48,7 +48,31 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="relative min-h-[520px]">
+            <div className="lg:hidden">
+              <div className="relative h-[360px] overflow-hidden bg-[#DED8CC] shadow-sm sm:h-[460px]">
+                <Image
+                  src="/small-accounting-team.jpg"
+                  alt="Small accounting team working together"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="mt-5 bg-[#101923] p-6 text-white shadow-sm">
+                <p className="text-sm text-slate-400">Small by design</p>
+
+                <h3 className="mt-4 text-3xl font-normal leading-tight">
+                  Personal support from a focused team.
+                </h3>
+
+                <p className="mt-4 text-sm leading-6 text-slate-400">
+                  Clients work with real people who understand their business,
+                  deadlines, and questions.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative hidden min-h-[520px] lg:block">
               <div className="absolute right-0 top-0 h-80 w-[82%] bg-[#DED8CC]" />
 
               <div className="absolute left-0 top-12 h-96 w-[82%] overflow-hidden shadow-sm">
@@ -77,7 +101,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-[#F6F4EE] py-24">
+      <section className="bg-[#F6F4EE] py-20 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Team"
@@ -93,7 +117,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-[#F6F4EE] py-24">
+      <section className="bg-[#F6F4EE] py-20 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Values"

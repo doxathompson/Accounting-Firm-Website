@@ -13,9 +13,13 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#F6F4EE]/90 backdrop-blur">
       <Container>
-        <div className="flex h-24 items-center justify-between border-b border-[#E5E1D8]">
-          <Link href="/" className="text-xl font-semibold tracking-tight text-[#111827]">
-            {firm.name}
+        <div className="flex h-20 items-center justify-between gap-4 border-b border-[#E5E1D8] lg:h-24">
+          <Link
+            href="/"
+            className="min-w-0 text-base font-semibold tracking-tight text-[#111827] sm:text-xl"
+            aria-label={`${firm.name} homepage`}
+          >
+            <span className="block truncate">{firm.name}</span>
           </Link>
 
           <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
@@ -40,14 +44,14 @@ export function Navbar() {
 
           <Link
             href="/contact"
-            className="hidden text-sm font-medium text-[#111827] hover:opacity-70 md:block"
+            className="hidden shrink-0 text-sm font-medium text-[#111827] hover:opacity-70 md:block"
           >
             Book a free consultation
           </Link>
 
           <button
             type="button"
-            className="rounded-full border border-[#D8D3C8] px-4 py-2 text-sm md:hidden"
+            className="shrink-0 rounded-full border border-[#D8D3C8] px-4 py-2 text-sm md:hidden"
             onClick={() => setIsOpen((current) => !current)}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
@@ -58,13 +62,13 @@ export function Navbar() {
 
         {isOpen ? (
           <div id="mobile-menu" className="border-b border-[#E5E1D8] py-4 md:hidden">
-            <nav className="flex flex-col gap-3">
+            <nav className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="rounded-xl px-2 py-2 text-sm text-[#4B5563]"
+                  className="rounded-xl px-2 py-3 text-sm text-[#4B5563]"
                 >
                   {item.label}
                 </Link>
@@ -73,7 +77,7 @@ export function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="mt-2 rounded-full bg-[#101923] px-5 py-3 text-center text-sm font-semibold text-white"
+                className="mt-2 bg-[#101923] px-5 py-3 text-center text-sm font-semibold text-white"
               >
                 Book a free consultation
               </Link>
