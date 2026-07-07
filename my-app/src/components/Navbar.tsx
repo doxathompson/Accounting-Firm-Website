@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { firm, navItems } from "@/data/site";
-import { ButtonLink } from "@/components/ButtonLink";
 import { Container } from "@/components/Container";
 
 export function Navbar() {
@@ -12,20 +11,14 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-[#F6F4EE]/90 backdrop-blur">
       <Container>
-        <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3" aria-label="London Accounting Firm home">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white">
-              QPA
-            </span>
-            <span className="leading-tight">
-              <span className="block text-sm font-bold text-slate-950">{firm.name}</span>
-              <span className="block text-xs text-slate-500">Small business accountants</span>
-            </span>
+        <div className="flex h-24 items-center justify-between border-b border-[#E5E1D8]">
+          <Link href="/" className="text-xl font-semibold tracking-tight text-[#111827]">
+            {firm.name}
           </Link>
 
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
 
@@ -33,10 +26,10 @@ export function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                  className={`text-sm transition ${
                     isActive
-                      ? "bg-slate-100 text-slate-950"
-                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-950"
+                      ? "text-[#111827]"
+                      : "text-[#4B5563] hover:text-[#111827]"
                   }`}
                 >
                   {item.label}
@@ -45,37 +38,45 @@ export function Navbar() {
             })}
           </nav>
 
-          <div className="hidden md:block">
-            <ButtonLink href="/contact">Book a free consultation</ButtonLink>
-          </div>
+          <Link
+            href="/contact"
+            className="hidden text-sm font-medium text-[#111827] hover:opacity-70 md:block"
+          >
+            Book a free consultation
+          </Link>
 
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-900 md:hidden"
-            aria-controls="mobile-menu"
-            aria-expanded={isOpen}
+            className="rounded-full border border-[#D8D3C8] px-4 py-2 text-sm md:hidden"
             onClick={() => setIsOpen((current) => !current)}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             Menu
           </button>
         </div>
 
         {isOpen ? (
-          <div id="mobile-menu" className="border-t border-slate-200 py-4 md:hidden">
-            <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
+          <div id="mobile-menu" className="border-b border-[#E5E1D8] py-4 md:hidden">
+            <nav className="flex flex-col gap-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-100"
+                  className="rounded-xl px-2 py-2 text-sm text-[#4B5563]"
                 >
                   {item.label}
                 </Link>
               ))}
-              <ButtonLink href="/contact" className="mt-2 w-full">
+
+              <Link
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="mt-2 rounded-full bg-[#101923] px-5 py-3 text-center text-sm font-semibold text-white"
+              >
                 Book a free consultation
-              </ButtonLink>
+              </Link>
             </nav>
           </div>
         ) : null}

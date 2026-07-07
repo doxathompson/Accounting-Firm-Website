@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
@@ -18,31 +19,52 @@ export default function ContactPage() {
         description="Tell us a little about your business and we’ll get back to you to arrange a consultation."
       />
 
-      <section className="bg-slate-50 py-20">
+      <section className="bg-[#F6F4EE] py-24">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-950">
-                Speak with a small team that understands small businesses.
-              </h2>
-              <p className="mt-4 leading-7 text-slate-600">
-                Use the form to tell us what kind of business you run and what support you need.
-                The goal is simple: understand your situation, explain the next step, and avoid
-                turning accounting into a mysterious ritual performed in a locked spreadsheet.
+              <p className="mb-4 text-sm font-medium text-[#4B5563]">
+                Get in touch
               </p>
 
-              <div className="mt-8 space-y-4 rounded-[2rem] border border-slate-200 bg-white p-6">
+              <h2 className="max-w-md text-5xl font-normal leading-[1.02] tracking-[-0.05em] text-[#111827]">
+                Speak with a small team that understands small businesses.
+              </h2>
+
+              <p className="mt-6 max-w-md text-base leading-7 text-[#4B5563]">
+                Use the form to tell us what kind of business you run and what
+                support you need. The goal is simple: understand your situation,
+                explain the next step, and avoid turning accounting into a
+                mysterious ritual performed in a locked spreadsheet.
+              </p>
+
+              <div className="relative mt-8 h-72 overflow-hidden bg-[#DED8CC] shadow-sm">
+                <Image
+                  src="/contact-accounting-consultation.jpg"
+                  alt="Accounting consultation meeting"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="mt-8 space-y-5 border border-[#E5E1D8] bg-[#FAF9F4] p-6">
                 <div>
-                  <p className="text-sm font-bold text-slate-950">Phone</p>
-                  <p className="mt-1 text-slate-600">{firm.phone}</p>
+                  <p className="text-sm font-semibold text-[#111827]">Phone</p>
+                  <p className="mt-1 text-sm text-[#4B5563]">{firm.phone}</p>
                 </div>
+
                 <div>
-                  <p className="text-sm font-bold text-slate-950">Email</p>
-                  <p className="mt-1 text-slate-600">{firm.email}</p>
+                  <p className="text-sm font-semibold text-[#111827]">Email</p>
+                  <p className="mt-1 text-sm text-[#4B5563]">{firm.email}</p>
                 </div>
+
                 <div>
-                  <p className="text-sm font-bold text-slate-950">Location</p>
-                  <p className="mt-1 text-slate-600">{firm.location}</p>
+                  <p className="text-sm font-semibold text-[#111827]">
+                    Location
+                  </p>
+                  <p className="mt-1 text-sm text-[#4B5563]">
+                    {firm.location}
+                  </p>
                 </div>
               </div>
             </div>

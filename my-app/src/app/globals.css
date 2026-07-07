@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #f6f4ee;
+  --foreground: #111827;
 }
 
 html {
@@ -15,8 +15,8 @@ body {
 }
 
 ::selection {
-  background: #bfdbfe;
-  color: #0f172a;
+  background: #d8e4d4;
+  color: #111827;
 }
 
 button,
@@ -24,5 +24,5 @@ a,
 input,
 textarea,
 select {
-  outline-color: #1d4ed8;
+  outline-color: #111827;
 }

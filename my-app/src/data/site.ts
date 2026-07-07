@@ -16,19 +16,23 @@ export const navItems = [
 export const trustSignals = [
   {
     title: "London-based practice",
-    description: "Local accounting support for small businesses, freelancers, consultants, and company directors.",
+    description:
+      "Personal accounting support for sole traders, freelancers, consultants, and small limited companies.",
   },
   {
     title: "Small business specialists",
-    description: "Focused on sole traders and limited companies with turnover under £500k.",
+    description:
+      "Focused on businesses with turnover under £500k who want reliable advice and clear communication.",
   },
   {
-    title: "Qualified accountants",
-    description: "Professional support for accounts, tax returns, bookkeeping, payroll, VAT, and business advice.",
+    title: "Qualified accounting support",
+    description:
+      "Support with accounts, tax returns, bookkeeping, payroll, VAT, and everyday accounting questions.",
   },
   {
-    title: "Responsive support",
-    description: "Clear communication from a small team that knows your business and answers properly.",
+    title: "Responsive communication",
+    description:
+      "A small team that aims to explain things clearly and respond like real humans. Shocking concept.",
   },
 ];
 
@@ -95,18 +99,21 @@ export const teamMembers = [
     name: "Team Member One",
     role: "Accountant",
     initials: "TM",
+    image: "/team-member-1.jpg",
     bio: "Supports small businesses with accounts, tax returns, and clear day-to-day accounting advice.",
   },
   {
     name: "Team Member Two",
     role: "Client Support",
     initials: "CS",
+    image: "/team-member-2.jpg",
     bio: "Helps clients stay organised, understand deadlines, and get timely responses from the team.",
   },
   {
     name: "Team Member Three",
     role: "Payroll & Bookkeeping",
     initials: "PB",
+    image: "/team-member-3.jpg",
     bio: "Works with clients on bookkeeping, payroll, records, and practical business administration.",
   },
 ];
@@ -117,30 +124,35 @@ export const resources = [
     excerpt:
       "A simple guide to the main differences between working as a sole trader and running a limited company.",
     tag: "Business structure",
+    image: "/resource-sole-trader-vs-limited-company.jpg",
   },
   {
     title: "What Records Should a Small Business Keep?",
     excerpt:
       "A practical overview of the records sole traders and limited companies should keep organised.",
     tag: "Record keeping",
+    image: "/resource-small-business-records.jpg",
   },
   {
     title: "When Should You Register for VAT?",
     excerpt:
       "A plain-English introduction to VAT registration and why timing matters for growing businesses.",
     tag: "VAT",
+    image: "/resource-vat-registration.jpg",
   },
   {
     title: "What Happens Before a Tax Return Deadline?",
     excerpt:
       "What to prepare, what your accountant may ask for, and how to avoid last-minute panic.",
     tag: "Tax returns",
+    image: "/resource-tax-deadline.jpg",
   },
   {
     title: "Why Responsive Accounting Support Matters",
     excerpt:
       "Why small businesses benefit from accountants who explain things clearly and respond quickly.",
     tag: "Client support",
+    image: "/resource-responsive-accounting.jpg",
   },
 ];
 

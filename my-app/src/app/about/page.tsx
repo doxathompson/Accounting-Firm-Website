@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CTASection } from "@/components/CTASection";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
@@ -20,33 +21,63 @@ export default function AboutPage() {
         description="London Accounting Firm supports sole traders, freelancers, consultants, and small limited companies who want reliable advice and responsive communication from real people."
       />
 
-      <section className="bg-white py-20">
+      <section className="bg-[#F6F4EE] py-24">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <SectionHeading
-              eyebrow="Our story"
-              title="Small by design, personal by nature."
-              description="The firm is built for business owners who want a direct relationship with their accountant. Instead of creating layers of departments, the team focuses on knowing each client, explaining things clearly, and helping them stay organised throughout the year."
-            />
+          <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div>
+              <p className="mb-4 text-sm font-medium text-[#4B5563]">
+                Our story
+              </p>
 
-            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 sm:p-8">
-              <h2 className="text-2xl font-bold text-slate-950">The small-team advantage</h2>
-              <p className="mt-4 leading-7 text-slate-600">
-                A three-person practice should not pretend to be a massive corporate firm. That
-                would be ridiculous, and the internet already has enough ridiculous things wearing
-                navy suits. The advantage here is personal support: clients can speak to people who
-                understand their business and respond with practical advice.
+              <h2 className="max-w-md text-5xl font-normal leading-[1.02] tracking-[-0.05em] text-[#111827]">
+                Small by design, personal by nature.
+              </h2>
+
+              <p className="mt-6 max-w-md text-base leading-7 text-[#4B5563]">
+                The firm is built for business owners who want a direct
+                relationship with their accountant. Instead of creating layers
+                of departments, the team focuses on knowing each client,
+                explaining things clearly, and helping them stay organised
+                throughout the year.
               </p>
-              <p className="mt-4 leading-7 text-slate-600">
-                This approach suits sole traders and small limited companies who value reliability,
-                responsiveness, and clear guidance over price-led, impersonal accounting.
+
+              <p className="mt-5 max-w-md text-base leading-7 text-[#4B5563]">
+                This approach suits sole traders and small limited companies
+                who value reliability, responsiveness, and clear guidance over
+                price-led, impersonal accounting.
               </p>
+            </div>
+
+            <div className="relative min-h-[520px]">
+              <div className="absolute right-0 top-0 h-80 w-[82%] bg-[#DED8CC]" />
+
+              <div className="absolute left-0 top-12 h-96 w-[82%] overflow-hidden shadow-sm">
+                <Image
+                  src="/small-accounting-team.jpg"
+                  alt="Small accounting team working together"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="absolute bottom-0 right-0 w-80 bg-[#101923] p-6 text-white shadow-xl">
+                <p className="text-sm text-slate-400">Small by design</p>
+
+                <h3 className="mt-4 text-3xl font-normal leading-tight">
+                  Personal support from a focused team.
+                </h3>
+
+                <p className="mt-4 text-sm leading-6 text-slate-400">
+                  Clients work with real people who understand their business,
+                  deadlines, and questions.
+                </p>
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="bg-slate-50 py-20">
+      <section className="bg-[#F6F4EE] py-24">
         <Container>
           <SectionHeading
             eyebrow="Team"
@@ -54,7 +85,7 @@ export default function AboutPage() {
             description="Placeholder team details are included for now and can be replaced with real names, photos, and biographies later."
           />
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {teamMembers.map((member) => (
               <TeamCard key={member.name} {...member} />
             ))}
@@ -62,7 +93,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="bg-[#F6F4EE] py-24">
         <Container>
           <SectionHeading
             eyebrow="Values"
@@ -70,11 +101,19 @@ export default function AboutPage() {
             description="The firm’s values are simple: communicate properly, explain clearly, meet deadlines, and build long-term relationships."
           />
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value) => (
-              <article key={value.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-slate-950">{value.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{value.description}</p>
+              <article
+                key={value.title}
+                className="border border-[#E5E1D8] bg-[#FAF9F4] p-6"
+              >
+                <h3 className="text-lg font-semibold text-[#111827]">
+                  {value.title}
+                </h3>
+
+                <p className="mt-4 text-sm leading-6 text-[#4B5563]">
+                  {value.description}
+                </p>
               </article>
             ))}
           </div>

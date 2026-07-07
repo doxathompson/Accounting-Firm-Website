@@ -4,30 +4,32 @@ import { firm, navItems } from "@/data/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white">
-      <Container className="py-10">
-        <div className="grid gap-8 md:grid-cols-[1.5fr_1fr_1fr]">
+    <footer className="bg-[#101923] text-white">
+      <Container size="wide" className="py-14">
+        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-xs font-bold text-white">
-                QPA
-              </span>
-              <div>
-                <p className="font-bold text-slate-950">{firm.name}</p>
-                <p className="text-sm text-slate-500">Small business accountants in London</p>
-              </div>
-            </div>
-            <p className="mt-4 max-w-md text-sm leading-6 text-slate-600">
-              Reliable accounting support for sole traders and limited companies who want clear advice,
-              responsive communication, and a personal relationship with their accountant.
+            <p className="text-2xl font-semibold tracking-tight">{firm.name}</p>
+            <p className="mt-5 max-w-xs text-sm leading-6 text-slate-400">
+              Contact us to see how responsive accounting support can save you time,
+              confusion, and deadline panic.
             </p>
           </div>
 
           <div>
-            <h2 className="text-sm font-bold text-slate-950">Pages</h2>
-            <div className="mt-4 flex flex-col gap-3">
+            <h2 className="text-sm font-semibold">Services</h2>
+            <div className="mt-5 space-y-3 text-sm text-slate-400">
+              <p>Accounts</p>
+              <p>Tax returns</p>
+              <p>Bookkeeping</p>
+              <p>Payroll</p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-sm font-semibold">Explore</h2>
+            <div className="mt-5 flex flex-col gap-3">
               {navItems.map((item) => (
-                <Link key={item.href} href={item.href} className="text-sm text-slate-600 hover:text-slate-950">
+                <Link key={item.href} href={item.href} className="text-sm text-slate-400 hover:text-white">
                   {item.label}
                 </Link>
               ))}
@@ -35,17 +37,17 @@ export function Footer() {
           </div>
 
           <div>
-            <h2 className="text-sm font-bold text-slate-950">Contact</h2>
-            <div className="mt-4 space-y-3 text-sm text-slate-600">
-              <p>{firm.location}</p>
-              <p>{firm.phone}</p>
+            <h2 className="text-sm font-semibold">Contact</h2>
+            <div className="mt-5 space-y-3 text-sm text-slate-400">
               <p>{firm.email}</p>
+              <p>{firm.phone}</p>
+              <p>{firm.location}</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-slate-200 pt-6 text-sm text-slate-500">
-          © {new Date().getFullYear()} {firm.name}. All rights reserved.
+        <div className="mt-14 border-t border-white/10 pt-6 text-sm text-slate-500">
+          Copyright © {new Date().getFullYear()} {firm.name}. All rights reserved.
         </div>
       </Container>
     </footer>

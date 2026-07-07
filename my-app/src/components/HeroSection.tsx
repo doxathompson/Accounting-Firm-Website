@@ -1,62 +1,85 @@
+import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Container } from "@/components/Container";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white">
-      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-blue-50 to-white" />
-      <Container className="relative py-20 sm:py-24 lg:py-28">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+    <section className="bg-[#F6F4EE] py-24 sm:py-28 lg:py-32">
+      <Container size="wide">
+        <div className="grid items-center gap-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="mb-5 inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-800">
+            <p className="mb-6 text-sm font-medium text-[#4B5563]">
               For sole traders and limited companies under £500k turnover
             </p>
 
-            <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Reliable accounting support for sole traders and small companies in London.
+            <h1 className="max-w-xl text-5xl font-normal leading-[0.98] tracking-[-0.05em] text-[#111827] sm:text-6xl lg:text-7xl">
+              Taking care of your accounts, tax, and paperwork.
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              We help sole traders and limited companies with accounts, tax returns,
-              bookkeeping, payroll, and practical advice, with responsive support from
-              a small team that knows your business.
+            <p className="mt-8 max-w-md text-base leading-7 text-[#4B5563]">
+              Reliable accounting support for London sole traders and small companies,
+              with responsive communication from a small team that knows your business.
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <ButtonLink href="/contact">Book a free consultation</ButtonLink>
-              <ButtonLink href="/services" variant="secondary">
-                View our services
+              <ButtonLink href="/services" variant="ghost">
+                View services
               </ButtonLink>
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm">
-            <div className="rounded-[1.5rem] bg-white p-6 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Small firm advantage
-              </p>
-              <h2 className="mt-4 text-2xl font-bold text-slate-950">
-                Speak to people who actually know your business.
-              </h2>
-              <p className="mt-4 leading-7 text-slate-600">
-                No confusing handoffs. No generic call-centre feel. Just practical accounting
-                support from a small team focused on small businesses.
-              </p>
+          <div className="relative min-h-[520px]">
+            <div className="absolute right-0 top-0 h-80 w-[78%] bg-[#DED8CC]" />
 
-              <div className="mt-6 grid gap-3">
+            <div className="absolute right-16 top-10 h-80 w-[62%] overflow-hidden shadow-sm">
+              <Image
+                src="/hero-accounting-meeting.jpg"
+                alt="Accountants reviewing paperwork with a small business client"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+
+            <div className="absolute left-6 top-56 w-56 bg-[#101923] p-5 text-white shadow-xl">
+              <p className="text-xs text-slate-400">Support areas</p>
+
+              <div className="mt-5 space-y-3">
                 {[
-                  "Accounts and tax explained clearly",
-                  "Support for sole traders and company directors",
-                  "Friendly, responsive communication",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 rounded-2xl bg-slate-50 p-4">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-800">
-                      ✓
-                    </span>
-                    <span className="text-sm font-medium text-slate-700">{item}</span>
+                  ["Accounts", "82%"],
+                  ["Tax returns", "68%"],
+                  ["Bookkeeping", "74%"],
+                  ["Payroll", "56%"],
+                ].map(([label, width]) => (
+                  <div key={label}>
+                    <div className="mb-1 flex justify-between text-xs">
+                      <span>{label}</span>
+                      <span>{width}</span>
+                    </div>
+                    <div className="h-2 bg-white/10">
+                      <div className="h-2 bg-white" style={{ width }} />
+                    </div>
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="absolute right-0 top-32 w-48 bg-[#101923] p-5 text-white shadow-xl">
+              <p className="text-xs text-slate-400">Client focus</p>
+              <p className="mt-3 text-2xl font-semibold">Under £500k</p>
+              <p className="mt-2 text-xs leading-5 text-slate-400">
+                Sole traders and small limited companies
+              </p>
+            </div>
+
+            <div className="absolute bottom-0 right-24 w-72 border border-[#E5E1D8] bg-[#FAF9F4] p-6 shadow-sm">
+              <p className="text-sm font-semibold text-[#111827]">
+                An accountant who actually picks up the phone.
+              </p>
+              <p className="mt-3 text-sm leading-6 text-[#4B5563]">
+                Personal accounting support without being passed around a large firm.
+              </p>
             </div>
           </div>
         </div>

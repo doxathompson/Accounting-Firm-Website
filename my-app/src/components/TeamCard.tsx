@@ -1,19 +1,36 @@
+import Image from "next/image";
+
 type TeamCardProps = {
   name: string;
   role: string;
   initials: string;
+  image?: string;
   bio: string;
 };
 
-export function TeamCard({ name, role, initials, bio }: TeamCardProps) {
+export function TeamCard({ name, role, initials, image, bio }: TeamCardProps) {
   return (
-    <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-slate-100 text-lg font-bold text-slate-800">
-        {initials}
+    <article className="bg-[#FAF9F4]">
+      <div className="relative h-80 overflow-hidden bg-[#DED8CC]">
+        {image ? (
+          <Image
+            src={image}
+            alt={`${name}, ${role}`}
+            fill
+            className="object-cover"
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center text-2xl font-semibold text-[#111827]">
+            {initials}
+          </div>
+        )}
       </div>
-      <h3 className="mt-5 text-xl font-bold text-slate-950">{name}</h3>
-      <p className="mt-1 text-sm font-semibold text-blue-700">{role}</p>
-      <p className="mt-4 leading-7 text-slate-600">{bio}</p>
+
+      <div className="border border-t-0 border-[#E5E1D8] p-6">
+        <h3 className="text-xl font-semibold text-[#111827]">{name}</h3>
+        <p className="mt-1 text-sm font-medium text-[#4B5563]">{role}</p>
+        <p className="mt-4 text-sm leading-6 text-[#4B5563]">{bio}</p>
+      </div>
     </article>
   );
 }

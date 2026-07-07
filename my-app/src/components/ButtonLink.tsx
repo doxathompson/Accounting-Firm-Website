@@ -15,15 +15,15 @@ export function ButtonLink({
   className = "",
 }: ButtonLinkProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
+    "inline-flex items-center justify-center px-6 py-4 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
 
   const styles = {
     primary:
-      "bg-slate-900 text-white hover:bg-slate-800 focus-visible:outline-slate-900",
+      "bg-[#101923] text-white hover:bg-[#1C2936] focus-visible:outline-[#101923]",
     secondary:
-      "border border-slate-300 bg-white text-slate-900 hover:bg-slate-50 focus-visible:outline-slate-900",
+      "border border-[#D8D3C8] bg-[#FAF9F4] text-[#111827] hover:bg-white focus-visible:outline-[#101923]",
     ghost:
-      "text-slate-700 hover:bg-slate-100 focus-visible:outline-slate-900",
+      "text-[#111827] hover:opacity-70 focus-visible:outline-[#101923]",
   };
 
   return (
