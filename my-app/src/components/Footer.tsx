@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import { firm, navItems } from "@/data/site";
+import { firm } from "@/data/site";
 
 export function Footer() {
   return (
@@ -28,11 +28,10 @@ export function Footer() {
           <div>
             <h2 className="text-sm font-semibold">Explore</h2>
             <div className="mt-5 flex flex-col gap-3">
-              {navItems.map((item) => (
-                <Link key={item.href} href={item.href} className="text-sm text-slate-400 hover:text-white">
-                  {item.label}
-                </Link>
-              ))}
+              <Link href="#" className="text-sm text-slate-400 hover:text-white">Services</Link>
+              <Link href="#" className="text-sm text-slate-400 hover:text-white">About</Link>
+              <Link href="#" className="text-sm text-slate-400 hover:text-white">Resources</Link>
+              <Link href="#" className="text-sm text-slate-400 hover:text-white">Contact</Link>
             </div>
           </div>
 
