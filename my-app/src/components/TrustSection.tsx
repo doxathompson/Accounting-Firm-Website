@@ -1,37 +1,33 @@
 import { Container } from "@/components/Container";
-import { trustSignals } from "@/data/site";
 
 export function TrustSection() {
   return (
-    <section className="bg-[#F6F4EE] py-16">
-      <Container>
-        <div className="bg-[#ECE8DD] px-8 py-12 sm:px-12 lg:px-16">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <h2 className="max-w-sm text-3xl font-normal leading-tight tracking-[-0.04em] text-[#111827] sm:text-4xl">
-                Accounting support built for small London businesses.
-              </h2>
-            </div>
-
-            <div>
-              <p className="max-w-xl text-base leading-7 text-[#4B5563]">
-                A small practice for sole traders and limited companies who want reliable advice,
-                clear explanations, and responsive communication from people who know their business.
-              </p>
-            </div>
+    <section className="bg-[#14532d] py-6 sm:py-8 lg:py-10">
+      <Container size="wide">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-center text-sm font-medium text-white sm:text-base">
+          <div className="flex items-center gap-2">
+            <svg className="h-5 w-5 text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>London-based practice</span>
           </div>
-
-          <div className="mt-10 border-t border-[#CFC7B8] pt-8">
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {trustSignals.map((signal) => (
-                <article key={signal.title}>
-                  <h3 className="text-base font-semibold text-[#111827]">{signal.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-[#4B5563]">
-                    {signal.description}
-                  </p>
-                </article>
-              ))}
-            </div>
+          <div className="flex items-center gap-2">
+            <svg className="h-5 w-5 text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Small business specialists</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <svg className="h-5 w-5 text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Responsive support</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <svg className="h-5 w-5 text-white/90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Personal service from a small team</span>
           </div>
         </div>
       </Container>

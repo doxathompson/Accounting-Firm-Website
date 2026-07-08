@@ -11,16 +11,16 @@ export function CTASection({
   description = "Tell us a little about your business and we’ll get back to you to arrange a free consultation.",
 }: CTASectionProps) {
   return (
-    <section className="bg-[#F6F4EE] py-24">
+    <section className="bg-[#FAF9F6] py-24">
       <Container size="wide">
-        <div className="bg-[#101923] px-8 py-16 text-white sm:px-12 lg:px-20">
+        <div className="bg-[#14532d] px-8 py-16 text-white sm:px-12 lg:px-20 rounded-2xl shadow-lg">
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-slate-400">
                 Free consultation
               </p>
 
-              <h2 className="max-w-4xl text-4xl font-normal leading-[1.05] tracking-[-0.05em] sm:text-5xl">
+              <h2 className="max-w-4xl font-serif text-4xl font-normal leading-[1.05] tracking-tight sm:text-5xl">
                 {title}
               </h2>
 

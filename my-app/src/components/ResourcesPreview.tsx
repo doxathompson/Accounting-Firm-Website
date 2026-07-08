@@ -6,12 +6,12 @@ import { resources } from "@/data/site";
 
 export function ResourcesPreview() {
   return (
-    <section className="bg-[#F6F4EE] py-24">
+    <section className="bg-[#FAF9F6] py-24">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <SectionHeading
             eyebrow="Resources"
-            title="Simple guidance for sole traders and limited companies."
+            title="For Sole Traders & Limited Companies"
             description="Helpful, plain-English resources for small business owners who want to understand the basics before speaking with an accountant."
           />
 

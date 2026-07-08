@@ -11,12 +11,12 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#F6F4EE]/90 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-[#FAF9F6]/90 backdrop-blur">
       <Container>
         <div className="flex h-20 items-center justify-between gap-4 border-b border-[#E5E1D8] lg:h-24">
           <Link
             href="/"
-            className="min-w-0 text-base font-semibold tracking-tight text-[#111827] sm:text-xl"
+            className="min-w-0 font-serif text-xl font-semibold tracking-tight text-[#111827] sm:text-2xl"
             aria-label={`${firm.name} homepage`}
           >
             <span className="block truncate">{firm.name}</span>
@@ -44,7 +44,7 @@ export function Navbar() {
 
           <Link
             href="#"
-            className="hidden shrink-0 text-sm font-medium text-[#111827] hover:opacity-70 md:block"
+            className="hidden shrink-0 bg-[#16a34a] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#15803d] md:block"
           >
             Book a free consultation
           </Link>
@@ -77,7 +77,7 @@ export function Navbar() {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="mt-2 bg-[#101923] px-5 py-3 text-center text-sm font-semibold text-white"
+                className="mt-2 bg-[#16a34a] px-5 py-3 text-center text-sm font-semibold text-white"
               >
                 Book a free consultation
               </Link>

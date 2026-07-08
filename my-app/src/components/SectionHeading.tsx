@@ -25,7 +25,7 @@ export function SectionHeading({
         </p>
       ) : null}
 
-      <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.05em] text-[#111827] sm:text-5xl">
+      <h2 className="font-serif text-4xl font-normal leading-[1.05] tracking-tight text-[#111827] sm:text-5xl">
         {title}
       </h2>
 

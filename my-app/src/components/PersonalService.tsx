@@ -4,11 +4,11 @@ import { Container } from "@/components/Container";
 
 export function PersonalService() {
   return (
-    <section className="overflow-hidden bg-[#F6F4EE] py-20 lg:py-24">
+    <section className="overflow-hidden bg-[#FAF9F6] py-20 lg:py-24">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <h2 className="max-w-md text-4xl font-normal leading-[1.03] tracking-[-0.05em] text-[#111827] sm:text-5xl">
+            <h2 className="max-w-md font-serif text-4xl font-normal leading-[1.03] tracking-tight text-[#111827] sm:text-5xl">
               More than just managing your accounts.
             </h2>
 
@@ -34,7 +34,7 @@ export function PersonalService() {
               />
             </div>
 
-            <div className="mt-5 bg-[#101923] p-6 text-white shadow-sm">
+            <div className="mt-5 bg-[#14532d] p-6 text-white shadow-sm">
               <p className="text-sm text-slate-400">What clients value</p>
 
               <div className="mt-5 space-y-4">
@@ -62,7 +62,7 @@ export function PersonalService() {
               />
             </div>
 
-            <div className="absolute bottom-0 right-0 w-80 bg-[#101923] p-6 text-white shadow-xl">
+            <div className="absolute bottom-0 right-0 w-80 bg-[#14532d] p-6 text-white shadow-xl">
               <p className="text-sm text-slate-400">What clients value</p>
 
               <div className="mt-5 space-y-4">

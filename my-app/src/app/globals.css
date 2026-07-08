@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --font-serif: var(--font-lora), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 :root {
-  --background: #f6f4ee;
+  --background: #faf9f6;
   --foreground: #111827;
 }
 

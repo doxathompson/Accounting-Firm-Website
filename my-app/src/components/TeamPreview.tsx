@@ -6,7 +6,7 @@ import { teamMembers } from "@/data/site";
 
 export function TeamPreview() {
   return (
-    <section className="bg-[#F6F4EE] py-24">
+    <section className="bg-[#FAF9F6] py-24">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <SectionHeading

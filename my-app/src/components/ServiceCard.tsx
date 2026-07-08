@@ -9,11 +9,11 @@ type ServiceCardProps = {
 export function ServiceCard({ service, detailed = false }: ServiceCardProps) {
   return (
     <article className="group border border-[#E5E1D8] bg-[#FAF9F4] p-7 transition hover:bg-white">
-      <div className="flex h-10 w-10 items-center justify-center bg-[#101923] text-sm font-semibold text-white">
+      <div className="flex h-10 w-10 items-center justify-center bg-[#16a34a] text-sm font-semibold text-white">
         +
       </div>
 
-      <h3 className="mt-7 text-2xl font-normal leading-tight tracking-[-0.04em] text-[#111827]">
+      <h3 className="mt-7 font-serif text-2xl font-normal leading-tight tracking-tight text-[#111827]">
         {service.title}
       </h3>
 
