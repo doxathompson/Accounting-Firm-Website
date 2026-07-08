@@ -17,6 +17,7 @@ export function TeamCard({ name, role, initials, image, bio }: TeamCardProps) {
             src={image}
             alt={`${name}, ${role}`}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover"
           />
         ) : (

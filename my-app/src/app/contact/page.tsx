@@ -43,6 +43,7 @@ export default function ContactPage() {
                   src="/contact-accounting-consultation.jpg"
                   alt="Accounting consultation meeting"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>

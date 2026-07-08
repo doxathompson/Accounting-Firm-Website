@@ -29,6 +29,7 @@ export function PersonalService() {
                 src="/responsive-accounting-support.jpg"
                 alt="Accountant providing responsive support to a small business client"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -56,6 +57,7 @@ export function PersonalService() {
                 src="/responsive-accounting-support.jpg"
                 alt="Accountant providing responsive support to a small business client"
                 fill
+                sizes="50vw"
                 className="object-cover"
               />
             </div>

@@ -16,6 +16,7 @@ export function ResourceCard({ title, excerpt, tag, image }: ResourceCardProps) 
             src={image}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover"
           />
         </div>

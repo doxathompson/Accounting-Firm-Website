@@ -45,6 +45,7 @@ export default function ServicesPage() {
                 src="/accounting-services-desk.jpg"
                 alt="Accounting paperwork, laptop, and business records on a desk"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

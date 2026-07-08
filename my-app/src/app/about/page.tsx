@@ -54,6 +54,7 @@ export default function AboutPage() {
                   src="/small-accounting-team.jpg"
                   alt="Small accounting team working together"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -80,6 +81,7 @@ export default function AboutPage() {
                   src="/small-accounting-team.jpg"
                   alt="Small accounting team working together"
                   fill
+                  sizes="50vw"
                   className="object-cover"
                 />
               </div>

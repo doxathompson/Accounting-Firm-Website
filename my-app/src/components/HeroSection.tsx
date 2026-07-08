@@ -36,6 +36,7 @@ export function HeroSection() {
                 alt="Accountants reviewing paperwork with a small business client"
                 fill
                 priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -69,6 +70,7 @@ export function HeroSection() {
                 alt="Accountants reviewing paperwork with a small business client"
                 fill
                 priority
+                sizes="50vw"
                 className="object-cover"
               />
             </div>
