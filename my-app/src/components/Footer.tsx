@@ -4,11 +4,11 @@ import { firm, navItems } from "@/data/site";
 
 export function Footer() {
   return (
-    <footer className="bg-[#101923] text-white">
+    <footer className="bg-[#14532d] text-white">
       <Container size="wide" className="py-14">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <p className="text-2xl font-semibold tracking-tight">{firm.name}</p>
+            <p className="font-serif text-2xl font-semibold tracking-tight">{firm.name}</p>
             <p className="mt-5 max-w-xs text-sm leading-6 text-slate-400">
               Contact us to see how responsive accounting support can save you time,
               confusion, and deadline panic.

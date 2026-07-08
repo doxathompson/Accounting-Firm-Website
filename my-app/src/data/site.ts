@@ -6,7 +6,6 @@ export const firm = {
 };
 
 export const navItems = [
-  { label: "Home", href: "/" },
   { label: "Services", href: "#" },
   { label: "About", href: "#" },
   { label: "Resources", href: "#" },
