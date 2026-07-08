@@ -11,6 +11,7 @@ Lighthouse SEO Audit
 ## Final PageSpeed Insights Results
 
 ### Mobile Results
+[View Full Mobile Report](https://pagespeed.web.dev/analysis/https-accounting-firm-website-one-vercel-app/3n8mstsq95?form_factor=mobile)
 | Category | Score |
 | :--- | :--- |
 | Performance | 98 |
@@ -19,6 +20,7 @@ Lighthouse SEO Audit
 | SEO | 100 |
 
 ### Desktop Results
+[View Full Desktop Report](https://pagespeed.web.dev/analysis/https-accounting-firm-website-one-vercel-app/3n8mstsq95?form_factor=desktop)
 | Category | Score |
 | :--- | :--- |
 | Performance | 100 |
