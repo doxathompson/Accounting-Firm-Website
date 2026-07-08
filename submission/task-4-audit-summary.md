@@ -1,30 +1,96 @@
-# PageSpeed and SEO Audit Summary (Task 4)
+# PageSpeed and SEO Audit Summary
+Task 4
 
-## Overview
-- **Homepage URL:** `https://accounting-firm-website-one.vercel.app/`
-- **Tools used:**
-  - Google PageSpeed Insights
-  - Lighthouse SEO / SEOptimer
+**Homepage URL:**
+https://accounting-firm-website-one.vercel.app/
 
-## Scores
-### Initial Scores (Before Optimization)
-- **Mobile Performance:** `[Score Placeholder]`
-- **Desktop Performance:** `[Score Placeholder]`
-- **SEO Score:** `[Score Placeholder]`
+**Tools used:**
+Google PageSpeed Insights
+Lighthouse SEO Audit
 
-### Final Scores (After Optimization)
-- **Mobile Performance:** `[Score Placeholder]` (Target: 85+)
-- **Desktop Performance:** `[Score Placeholder]`
-- **SEO Score:** `[Score Placeholder]`
+## Final PageSpeed Insights Results
 
-## Changes Made
-1. **Image Optimization:** Resized large images (e.g. `responsive-accounting-support.jpg`, `small-accounting-team.jpg`) from 3800px down to a maximum of 1800px to reduce payload size, improving Largest Contentful Paint (LCP) and overall load speed.
-2. **Next.js `<Image />` Sizes Attribute:** Added the `sizes` attribute to all fill-based images (e.g., `sizes="(max-width: 1024px) 100vw, 50vw"`). This prevents the browser from downloading unnecessarily large images on mobile devices, vastly improving mobile performance.
-3. **SEO Metadata Update:** Corrected the `<title>`, `<meta name="description">`, and Open Graph tags in `src/app/layout.tsx` to precisely target small businesses and sole traders in London, ensuring all core on-page SEO checks pass. Added the `metadataBase` to ensure OG images load correctly.
-4. **Added `sitemap.ts` and `robots.ts`:** Created dynamic sitemap and robots.txt files to ensure proper crawling and indexing by search engines.
-5. **Responsive Fixes & Forbidden Language Check:** Verified there is no horizontal overflow on mobile, and confirmed that negative SEO signals or off-brand phrases like "pricing", "cheap", or "get a quote" have been completely avoided to maintain a high-trust, conversion-ready page.
+### Mobile Results
+| Category | Score |
+| :--- | :--- |
+| Performance | 98 |
+| Accessibility | 95 |
+| Best Practices | 100 |
+| SEO | 100 |
 
-## Screenshot Checklist
-- `[ ]` PageSpeed Insights Mobile Score Screenshot
-- `[ ]` PageSpeed Insights Desktop Score Screenshot
-- `[ ]` Lighthouse/SEO Tool Score Screenshot
+### Desktop Results
+| Category | Score |
+| :--- | :--- |
+| Performance | 100 |
+| Accessibility | 95 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+### Screenshots Captured
+- pagespeed-mobile-final.png
+- pagespeed-desktop-final.png
+- pagespeed-diagnostics.png
+
+## Changes Made and Why
+
+### 1. Image Optimization
+Large images were resized from very high-resolution originals down to more appropriate web dimensions. This reduced page weight and helped improve load speed, especially on mobile devices.
+
+This supports better Largest Contentful Paint, faster visual loading, and a smoother mobile experience.
+
+### 2. Responsive Image Delivery
+The homepage uses the Next.js `<Image />` component, with `sizes` attributes added to fill-based images.
+
+Example:
+```tsx
+sizes="(max-width: 1024px) 100vw, 50vw"
+```
+
+This helps the browser request image sizes appropriate to the user’s device, rather than downloading unnecessarily large desktop images on mobile. Apparently phones do not enjoy being force-fed desktop-sized images. Who knew.
+
+### 3. SEO Metadata Improvements
+The homepage metadata was updated to include:
+- clear page title
+- relevant meta description
+- Open Graph title and description
+- Open Graph image
+- metadataBase for correct absolute URL handling
+
+The metadata targets the client’s intended audience: sole traders, small business owners, and limited companies in London.
+
+### 4. Sitemap and Robots Files
+Dynamic `sitemap.ts` and `robots.ts` files were added to support search engine crawling and indexing.
+
+These files help search engines understand which pages are available and how the site should be crawled.
+
+### 5. Responsive Layout Improvements
+The homepage was reviewed and adjusted for mobile responsiveness.
+
+Improvements included:
+- clean mobile stacking for the hero section
+- responsive card grids
+- no horizontal overflow
+- readable mobile text sizes
+- tap-friendly CTA buttons
+- mobile-friendly navigation
+
+This ensures the page works properly across mobile, tablet, and desktop.
+
+### 6. Conversion and Positioning Alignment
+The homepage was reviewed against the client brief to ensure the copy supports the firm’s positioning around reliability, responsiveness, and personal service.
+
+The page avoids price-led language such as:
+- “Get a quote”
+- “Starting from”
+- pricing tables
+- cheap accounting language
+
+The primary call to action remains:
+**Book a free consultation**
+
+This supports the client’s relationship-led positioning rather than making the service feel transactional.
+
+## Final Outcome
+The final homepage exceeded the required mobile performance score of 85, achieving a mobile performance score of **98** and a desktop performance score of **100**.
+
+The page also passed the core on-page SEO checks, with an SEO score of **100** on both mobile and desktop.
