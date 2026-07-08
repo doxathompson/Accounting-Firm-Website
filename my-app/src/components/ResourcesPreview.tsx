@@ -16,7 +16,7 @@ export function ResourcesPreview() {
           />
 
           <div className="lg:pb-1">
-            <ButtonLink href="/resources" variant="secondary">
+            <ButtonLink href="#" variant="secondary">
               View resources
             </ButtonLink>
           </div>

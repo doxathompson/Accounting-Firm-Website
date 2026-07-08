@@ -43,7 +43,7 @@ export function Navbar() {
           </nav>
 
           <Link
-            href="/contact"
+            href="#"
             className="hidden shrink-0 text-sm font-medium text-[#111827] hover:opacity-70 md:block"
           >
             Book a free consultation
@@ -75,7 +75,7 @@ export function Navbar() {
               ))}
 
               <Link
-                href="/contact"
+                href="#"
                 onClick={() => setIsOpen(false)}
                 className="mt-2 bg-[#101923] px-5 py-3 text-center text-sm font-semibold text-white"
               >

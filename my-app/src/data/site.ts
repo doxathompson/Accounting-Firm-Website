@@ -7,10 +7,10 @@ export const firm = {
 
 export const navItems = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
-  { label: "Resources", href: "/resources" },
-  { label: "Contact", href: "/contact" },
+  { label: "Services", href: "#" },
+  { label: "About", href: "#" },
+  { label: "Resources", href: "#" },
+  { label: "Contact", href: "#" },
 ];
 
 export const trustSignals = [

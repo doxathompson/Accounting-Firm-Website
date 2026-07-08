@@ -16,7 +16,7 @@ export function TeamPreview() {
           />
 
           <div className="lg:pb-1">
-            <ButtonLink href="/about" variant="secondary">
+            <ButtonLink href="#" variant="secondary">
               Meet the team
             </ButtonLink>
           </div>
