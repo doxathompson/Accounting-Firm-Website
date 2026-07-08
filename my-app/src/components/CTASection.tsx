@@ -13,10 +13,10 @@ export function CTASection({
   return (
     <section className="bg-[#FAF9F6] py-24">
       <Container size="wide">
-        <div className="bg-[#14532d] px-8 py-16 text-white sm:px-12 lg:px-20 rounded-2xl shadow-lg">
+        <div className="bg-[#0F2742] px-8 py-16 text-white sm:px-12 lg:px-20 rounded-2xl shadow-lg">
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-slate-400">
+              <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-[#D8E7F3]">
                 Free consultation
               </p>
 

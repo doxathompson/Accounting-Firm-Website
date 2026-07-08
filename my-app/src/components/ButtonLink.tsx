@@ -19,7 +19,7 @@ export function ButtonLink({
 
   const styles = {
     primary:
-      "bg-[#16a34a] text-white hover:bg-[#15803d] focus-visible:outline-[#16a34a]",
+      "bg-[#0F2742] text-white hover:bg-[#173B5C] focus-visible:outline-[#0F2742]",
     secondary:
       "border border-[#D8D3C8] bg-[#FAF9F4] text-[#111827] hover:bg-white focus-visible:outline-[#101923]",
     ghost:

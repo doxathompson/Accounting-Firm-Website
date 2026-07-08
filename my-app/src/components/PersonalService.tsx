@@ -34,7 +34,7 @@ export function PersonalService() {
               />
             </div>
 
-            <div className="mt-5 bg-[#14532d] p-6 text-white shadow-sm">
+            <div className="mt-5 bg-[#0F2742] p-6 text-white shadow-sm">
               <p className="text-sm text-slate-400">What clients value</p>
 
               <div className="mt-5 space-y-4">
@@ -62,7 +62,7 @@ export function PersonalService() {
               />
             </div>
 
-            <div className="absolute bottom-0 right-0 w-80 bg-[#14532d] p-6 text-white shadow-xl">
+            <div className="absolute bottom-0 right-0 w-80 bg-[#0F2742] p-6 text-white shadow-xl">
               <p className="text-sm text-slate-400">What clients value</p>
 
               <div className="mt-5 space-y-4">

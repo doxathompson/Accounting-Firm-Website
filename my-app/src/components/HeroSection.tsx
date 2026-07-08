@@ -8,7 +8,7 @@ export function HeroSection() {
       <Container size="wide">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="pb-12 lg:py-12">
-            <p className="mb-4 text-sm font-semibold tracking-wider text-[#16a34a] uppercase">
+            <p className="mb-4 text-sm font-semibold tracking-wider text-[#173B5C] uppercase">
               For sole traders and limited companies under £500k turnover
             </p>
 

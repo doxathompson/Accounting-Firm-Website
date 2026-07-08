@@ -9,7 +9,7 @@ type ServiceCardProps = {
 export function ServiceCard({ service, detailed = false }: ServiceCardProps) {
   return (
     <article className="group border border-[#E5E1D8] bg-[#FAF9F4] p-7 transition hover:bg-white">
-      <div className="flex h-10 w-10 items-center justify-center bg-[#16a34a] text-sm font-semibold text-white">
+      <div className="flex h-10 w-10 items-center justify-center bg-[#0F2742] text-sm font-semibold text-white">
         +
       </div>
 

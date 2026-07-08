@@ -4,7 +4,7 @@ import { firm, navItems } from "@/data/site";
 
 export function Footer() {
   return (
-    <footer className="bg-[#14532d] text-white">
+    <footer className="bg-[#0F2742] text-white">
       <Container size="wide" className="py-14">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>

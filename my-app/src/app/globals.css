@@ -5,7 +5,7 @@
 }
 
 :root {
-  --background: #faf9f6;
+  --background: #F7F5EF;
   --foreground: #111827;
 }
 
@@ -30,8 +30,8 @@ img {
 }
 
 ::selection {
-  background: #d8e4d4;
-  color: #111827;
+  background: #D8E7F3;
+  color: #0F2742;
 }
 
 button,
@@ -39,5 +39,5 @@ a,
 input,
 textarea,
 select {
-  outline-color: #111827;
+  outline-color: #0F2742;
 }

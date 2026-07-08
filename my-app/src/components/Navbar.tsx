@@ -44,7 +44,7 @@ export function Navbar() {
 
           <Link
             href="#"
-            className="hidden shrink-0 bg-[#16a34a] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#15803d] md:block"
+            className="hidden shrink-0 bg-[#0F2742] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#173B5C] md:block"
           >
             Book a free consultation
           </Link>
@@ -77,7 +77,7 @@ export function Navbar() {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="mt-2 bg-[#16a34a] px-5 py-3 text-center text-sm font-semibold text-white"
+                className="mt-2 bg-[#0F2742] px-5 py-3 text-center text-sm font-semibold text-white"
               >
                 Book a free consultation
               </Link>
