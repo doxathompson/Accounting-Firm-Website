@@ -28,7 +28,7 @@ export function Navbar() {
 
               return (
                 <Link
-                  key={item.href}
+                  key={item.label}
                   href={item.href}
                   className={`text-sm transition ${
                     isActive
@@ -65,7 +65,7 @@ export function Navbar() {
             <nav className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
-                  key={item.href}
+                  key={item.label}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
                   className="rounded-xl px-2 py-3 text-sm text-[#4B5563]"
