@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Container } from "@/components/Container";
 import { firm } from "@/data/site";
 
@@ -28,10 +27,10 @@ export function Footer() {
           <div>
             <h2 className="text-sm font-semibold">Explore</h2>
             <div className="mt-5 flex flex-col gap-3">
-              <Link href="/services" className="text-sm text-slate-400 hover:text-white">Services</Link>
-              <Link href="/about" className="text-sm text-slate-400 hover:text-white">About</Link>
-              <Link href="/resources" className="text-sm text-slate-400 hover:text-white">Resources</Link>
-              <Link href="/contact" className="text-sm text-slate-400 hover:text-white">Contact</Link>
+              <span aria-disabled="true" className="cursor-default text-sm text-slate-400">Services</span>
+              <span aria-disabled="true" className="cursor-default text-sm text-slate-400">About</span>
+              <span aria-disabled="true" className="cursor-default text-sm text-slate-400">Resources</span>
+              <span aria-disabled="true" className="cursor-default text-sm text-slate-400">Contact</span>
             </div>
           </div>
 

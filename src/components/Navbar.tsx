@@ -27,27 +27,27 @@ export function Navbar() {
               const isActive = pathname === item.href;
 
               return (
-                <Link
+                <span
                   key={item.label}
-                  href={item.href}
-                  className={`text-sm transition ${
+                  aria-disabled="true"
+                  className={`cursor-default text-sm transition ${
                     isActive
                       ? "text-[#111827]"
-                      : "text-[#4B5563] hover:text-[#111827]"
+                      : "text-[#4B5563]"
                   }`}
                 >
                   {item.label}
-                </Link>
+                </span>
               );
             })}
           </nav>
 
-          <Link
-            href="/contact"
-            className="hidden shrink-0 bg-[#0F2742] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#173B5C] md:block"
+          <span
+            aria-disabled="true"
+            className="hidden shrink-0 cursor-default bg-[#0F2742] px-5 py-2.5 text-sm font-semibold text-white opacity-70 md:block"
           >
             Book a free consultation
-          </Link>
+          </span>
 
           <button
             type="button"
@@ -64,23 +64,21 @@ export function Navbar() {
           <div id="mobile-menu" className="border-b border-[#E5E1D8] py-4 md:hidden">
             <nav className="flex flex-col gap-2">
               {navItems.map((item) => (
-                <Link
+                <span
                   key={item.label}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="rounded-xl px-2 py-3 text-sm text-[#4B5563]"
+                  aria-disabled="true"
+                  className="cursor-default rounded-xl px-2 py-3 text-sm text-[#4B5563]"
                 >
                   {item.label}
-                </Link>
+                </span>
               ))}
 
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="mt-2 bg-[#0F2742] px-5 py-3 text-center text-sm font-semibold text-white"
+              <span
+                aria-disabled="true"
+                className="mt-2 cursor-default bg-[#0F2742] px-5 py-3 text-center text-sm font-semibold text-white opacity-70"
               >
                 Book a free consultation
-              </Link>
+              </span>
             </nav>
           </div>
         ) : null}
