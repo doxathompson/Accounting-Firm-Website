@@ -14,7 +14,7 @@ export const navItems = [
 
 export const trustSignals = [
   {
-    title: "London-based practice",
+    title: "London-based practice ",
     description:
       "Personal accounting support for sole traders, freelancers, consultants, and small limited companies.",
   },
