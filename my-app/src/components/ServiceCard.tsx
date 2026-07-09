@@ -40,7 +40,7 @@ export function ServiceCard({ service, detailed = false }: ServiceCardProps) {
           </div>
 
           <Link
-            href="#"
+            href="/contact"
             className="inline-flex text-sm font-semibold text-[#111827] underline underline-offset-4 transition hover:opacity-70"
           >
             Book a free consultation
@@ -48,7 +48,7 @@ export function ServiceCard({ service, detailed = false }: ServiceCardProps) {
         </div>
       ) : (
         <Link
-          href="#"
+          href="/services"
           className="mt-7 inline-flex text-sm font-semibold text-[#111827] underline underline-offset-4 transition hover:opacity-70"
         >
           Learn more

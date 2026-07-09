@@ -16,7 +16,7 @@ export function ServicesPreview() {
           />
 
           <div className="lg:pb-1">
-            <ButtonLink href="#" variant="secondary">
+            <ButtonLink href="/services" variant="secondary">
               View all services
             </ButtonLink>
           </div>

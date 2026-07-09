@@ -19,7 +19,7 @@ export function PersonalService() {
             </p>
 
             <div className="mt-8">
-              <ButtonLink href="#">Meet the team</ButtonLink>
+              <ButtonLink href="/about">Meet the team</ButtonLink>
             </div>
           </div>
 

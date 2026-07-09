@@ -29,7 +29,7 @@ export function CTASection({
               </p>
             </div>
 
-            <ButtonLink href="#" variant="secondary">
+            <ButtonLink href="/contact" variant="secondary">
               Book a free consultation
             </ButtonLink>
           </div>

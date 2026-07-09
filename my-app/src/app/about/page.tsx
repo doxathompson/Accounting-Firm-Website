@@ -108,7 +108,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Team"
             title="Meet the people behind the practice."
-            description="Placeholder team details are included for now and can be replaced with real names, photos, and biographies later."
+            description="A small, dedicated team of accounting professionals here to support your business."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">

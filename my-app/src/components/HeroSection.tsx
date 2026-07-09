@@ -21,8 +21,8 @@ export function HeroSection() {
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <ButtonLink href="#">Book a free consultation</ButtonLink>
-              <ButtonLink href="#" variant="ghost">
+              <ButtonLink href="/contact">Book a free consultation</ButtonLink>
+              <ButtonLink href="/services" variant="ghost">
                 View services
               </ButtonLink>
             </div>
