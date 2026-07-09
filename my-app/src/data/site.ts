@@ -6,9 +6,10 @@ export const firm = {
 };
 
 export const navItems = [
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
-  { label: "Resources", href: "/resources" },
+  { label: "About / Team", href: "/about" },
+  { label: "Resources: For Sole Traders & Limited Companies", href: "/resources" },
   { label: "Contact", href: "/contact" },
 ];
 
