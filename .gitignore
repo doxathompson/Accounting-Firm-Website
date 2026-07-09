@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Submission documents (local only)
+submission/
+
+# Environment files
+.env*
